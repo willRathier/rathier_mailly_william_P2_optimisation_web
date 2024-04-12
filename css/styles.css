@@ -1,5 +1,16 @@
+:root {
+  --rouge: #d7132d;
+  --bleu: #061148;
+  --gris: #292728;
+  --blanc: #ffff;
+  --noir: #000;
+
+  --Madimi: "Madimi One", sans-serif;
+}
+
 body {
-  font-family: "Madimi One", sans-serif;
+  font-family: var(--Madimi);
+  overflow-x: hidden;
 }
 header {
   text-align: center;
