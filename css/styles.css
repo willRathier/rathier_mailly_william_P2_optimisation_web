@@ -8,10 +8,28 @@
   --Madimi: "Madimi One", sans-serif;
 }
 
+html,
 body {
+  margin: 0px;
+  padding: 0px;
   font-family: var(--Madimi);
   overflow-x: hidden;
+  background-color: var(--gris);
 }
 header {
+  background-image: url(../img/background.jpg);
+  color: var(--blanc);
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+header h1 {
+  font-size: 15vw;
+}
+
+footer {
+  font-size: 11px;
+  color: var(--blanc);
+  text-align: right;
 }
