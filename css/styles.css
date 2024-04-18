@@ -14,6 +14,7 @@ body {
   font-family: var(--Madimi);
   overflow-x: hidden;
   background-color: var(--gris);
+  background-color: var(--blanc);
 }
 header {
   background-image: url(../img/autres/background.jpg);
@@ -44,9 +45,16 @@ header h1 {
 }
 
 footer {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--blanc);
   text-align: right;
+  background-color: var(--gris);
+  padding-top: 20px;
+  height: 100px;
+}
+
+footer p {
+  margin: 20px;
 }
 
 #chapitre-1 {
@@ -119,9 +127,25 @@ footer {
   border: solid 1px red;
 }
 
+/*------HTML SPRITESHEET------*/
+.html-2 {
+  height: 1920px;
+}
+
 .sprite {
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--blanc);
+  height: 132px;
+  width: 125px;
   background-image: url(../img/spritesheet/spritesheet-feu.png);
+  animation: feu 0.5s steps(19) infinite;
+  aspect-ratio: 25/528;
+  animation-play-state: paused;
+}
+
+@keyframes feu {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
 }
