@@ -19,12 +19,27 @@ header {
   background-image: url(../img/autres/background.jpg);
   color: var(--blanc);
   text-align: center;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 
+header p {
+  font-size: 30px;
+  margin: auto;
+}
+
+header img {
+  width: 8vw;
+  height: 8vh;
+  margin: 0 auto;
+}
+
 header h1 {
+  margin: 0px;
+  margin-bottom: 20vh;
   font-size: 15vw;
 }
 
@@ -38,40 +53,68 @@ footer {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap1/espace.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
 
 #chapitre-2 {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap2/fond.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
 
 #chapitre-3 {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap3/fond_arriere.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
 
 #chapitre-4 {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap4/fond.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
 
 #chapitre-5 {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap5/fond.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
 
 #chapitre-6 {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap6/background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
 
 #chapitre-7 {
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap7/espace.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
 }
