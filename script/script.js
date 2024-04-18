@@ -5,3 +5,17 @@ let timer = setTimeout(100);
 window.addEventListener(scroll, function () {
   console.log("Scroll détecté");
 });
+
+const body = document.querySelector("is-scrolling");
+
+let scrollTimer;
+
+window.addEventListener("scroll", function () {
+  this.document.body.classList.add("is-scrolling");
+});
+
+window.addEventListener("scrollend", function () {
+  scrollTimer = this.setTimeout(function () {
+    document.body.classList.remove("is-scrolling");
+  }, 100);
+});
