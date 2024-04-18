@@ -118,3 +118,10 @@ footer {
   background-repeat: no-repeat;
   border: solid 1px red;
 }
+
+.sprite {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--blanc);
+  background-image: url(../img/spritesheet/spritesheet-feu.png);
+}
