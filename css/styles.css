@@ -153,3 +153,25 @@ footer p {
 body.is-scrolling .sprite {
   animation-play-state: running;
 }
+
+.volant {
+  height: 238px;
+  width: 476px;
+  background-image: url(../img/spritesheet/spritesheet_volant.png);
+  animation: steering 0.7s steps(20) infinite;
+  aspect-ratio: 2/21;
+  animation-play-state: paused;
+}
+
+@keyframes steering {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
+body.is-scrolling .volant {
+  animation-play-state: running;
+}
