@@ -8,14 +8,14 @@
   --Madimi: "Madimi One", sans-serif;
 }
 
-html,
+
 body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0px;
   font-family: var(--Madimi);
   overflow-x: hidden;
-  background-color: var(--gris);
+  background-color: var(--gris); 
   background-color: var(--blanc);
 }
 
@@ -52,23 +52,9 @@ header h1 {
   font-size: 15vw;
 }
 
-footer {
-  position: fixed;
-  font-size: 13px;
-  color: var(--blanc);
-  text-align: right;
-  background-color: var(--gris);
-  padding-top: 20px;
-  width: 100vw;
-  left: 0;
-  bottom: 0;
-}
-
-footer p {
-  margin: 20px;
-}
 
 #chapitre-1 {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap1/espace.svg);
@@ -79,6 +65,7 @@ footer p {
 }
 
 #chapitre-2 {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap2/fond.svg);
@@ -89,6 +76,7 @@ footer p {
 }
 
 #chapitre-3 {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap3/fond_arriere.svg);
@@ -99,6 +87,7 @@ footer p {
 }
 
 #chapitre-4 {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap4/fond.svg);
@@ -109,6 +98,7 @@ footer p {
 }
 
 #chapitre-5 {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap5/fond.svg);
@@ -119,6 +109,7 @@ footer p {
 }
 
 #chapitre-6 {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap6/background.svg);
@@ -129,6 +120,7 @@ footer p {
 }
 
 #chapitre-7 {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: url(../img/elements_chap7/espace.svg);
