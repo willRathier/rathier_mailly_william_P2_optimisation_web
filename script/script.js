@@ -11,11 +11,11 @@ const body = document.querySelector("is-scrolling");
 let scrollTimer;
 
 window.addEventListener("scroll", function () {
-  body.document.body.classList.add("is-scrolling");
+  document.body.classList.add("is-scrolling");
 });
 
 window.addEventListener("scrollend", function () {
-  scrollTimer = body.setTimeout(function () {
+  scrollTimer = setTimeout(function () {
     document.body.classList.remove("is-scrolling");
   }, 100);
 });

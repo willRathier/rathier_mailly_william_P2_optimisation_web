@@ -8,20 +8,14 @@
   --Madimi: "Madimi One", sans-serif;
 }
 
-
 body {
   height: 100vh;
   width: 100vw;
   margin: 0px;
   font-family: var(--Madimi);
   overflow-x: hidden;
-  background-color: var(--gris); 
+  background-color: var(--gris);
   background-color: var(--blanc);
-}
-
-main{
-  width: 100vw;
-  height: 100vh;
 }
 
 header {
@@ -51,7 +45,6 @@ header h1 {
   margin-bottom: 20vh;
   font-size: 15vw;
 }
-
 
 #chapitre-1 {
   position: relative;
@@ -177,4 +170,20 @@ body.is-scrolling .sprite {
 
 body.is-scrolling .volant {
   animation-play-state: running;
+}
+
+/* --- CSS FOOTER --- */
+footer {
+  background-color: var(--gris);
+  color: var(--blanc);
+  font-size: 13px;
+  position: relative;
+  width: 100vw;
+  bottom: 0;
+  padding: 15px;
+  margin: 0;
+}
+
+footer p {
+  text-align: center;
 }
