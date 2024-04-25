@@ -46,6 +46,10 @@ header h1 {
   font-size: 15vw;
 }
 
+/*img {
+  border: 1px solid red;
+}*/
+
 /*---- START chapitre 1 ----*/
 #chapitre-1 {
   position: relative;
@@ -56,6 +60,15 @@ header h1 {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+}
+
+#text-1 {
+  color: var(--blanc);
+  position: absolute;
+  font-size: 4vh;
+  left: 7vw;
+  text-align: center;
+  bottom: 10vh;
 }
 
 #lune {
@@ -95,20 +108,30 @@ header h1 {
   border: solid 1px red;
 }
 
+#text-2 {
+  color: var(--blanc);
+  position: absolute;
+  font-size: 5vh;
+  height: 30vh;
+  width: 7vw;
+  top: 0;
+  left: 15vw;
+}
+
 #kevin {
   position: absolute;
-  height: 55vh;
-  width: 40vw;
-  left: 30vw;
-  bottom: 20vh;
+  height: 43.5vh;
+  width: 11.4vw;
+  left: 44vw;
+  bottom: 15vh;
 }
 
 #sofa {
   position: absolute;
-  width: 50vw;
-  height: 55vh;
+  width: 29.3vw;
+  height: 38.7vh;
   bottom: 1vh;
-  left: 25vw;
+  left: 35vw;
 }
 /*---- FIN chapitre 2 ----*/
 
@@ -124,33 +147,47 @@ header h1 {
   border: solid 1px red;
 }
 
+#text-3 {
+  color: var(--blanc);
+  font-size: 4vh;
+  position: absolute;
+  top: 32vh;
+  left: 52vw;
+  height: 10vh;
+  width: 30vw;
+}
+
 #fond_avant {
   position: absolute;
   height: 100vh;
   width: 100vw;
   object-fit: cover;
   left: 0;
+  bottom: 0;
 }
 
 #kev2 {
   position: absolute;
-  height: 50vh;
+  height: 39.5vh;
+  width: 9.5;
   bottom: 5vh;
-  left: 38vw;
+  left: 39vw;
 }
 
 #pince {
   position: absolute;
-  height: 40vh;
-  top: 0vh;
-  left: 37.7vw;
+  height: 42.5vh;
+  width: 12.4vw;
+  top: 10vh;
+  left: 36vw;
 }
 
 #casque {
   position: absolute;
-  height: 17vh;
+  height: 14vh;
+  width: 8.75vw;
   left: 38vw;
-  bottom: 50vh;
+  bottom: 40vh;
 }
 /*---- FIN chapitre 3 ----*/
 
@@ -168,47 +205,50 @@ header h1 {
 
 #spaceship {
   position: absolute;
-  height: 85vh;
+  height: 77.7vh;
+  width: 20.34;
   bottom: 3vh;
-  right: 15vw;
+  right: 18vw;
 }
 
 #stairs {
   position: absolute;
-  height: 40vh;
+  height: 30.4vh;
+  width: 17.4vw;
   right: 28vw;
-  bottom: 3vh;
+  bottom: 5vh;
 }
 
 #feufeu {
   position: absolute;
-  height: 15vh;
-  width: 5vw;
+  height: 13.6vh;
+  width: 6.5vw;
   bottom: 3vh;
-  right: 21.3vw;
+  right: 22.9vw;
 }
 
 #kev3 {
   position: absolute;
-  height: 32vh;
+  height: 28.1vh;
+  width: 6.6;
   bottom: 2vh;
   left: 30vw;
 }
 
 #nuage1 {
   position: absolute;
-  height: 25vh;
-  width: 43vw;
-  right: 3vw;
+  height: 30.9vh;
+  width: 65.2vw;
+  right: -5vw;
   bottom: 0;
 }
 
 #numage2 {
   position: absolute;
-  height: 25vh;
-  width: 43vw;
-  right: 3vw;
-  bottom: 0;
+  height: 17.2vh;
+  width: 28.5vw;
+  right: 12vw;
+  bottom: 2vh;
 }
 /*---- FIN chapitre 4 ----*/
 
@@ -226,29 +266,34 @@ header h1 {
 
 #bombe {
   position: absolute;
-  height: 50vh;
-  bottom: -5vh;
-  right: 10vw;
+  height: 38.1vh;
+  width: 13.2vw;
+  bottom: 0;
+  right: 15vw;
 }
 
 #kev4 {
   position: absolute;
+  height: 72vh;
+  width: 33.4vw;
   bottom: 0;
   left: 34vw;
-  height: 90vh;
 }
 
 #meteorite2 {
   position: absolute;
-  height: 15vh;
+  height: 13.3vh;
+  width: 8.3vw;
   top: 5vh;
   left: 33vw;
 }
 
 #volant {
   position: absolute;
+  height: 22vh;
+  width: 24.8vw;
   bottom: 15vh;
-  left: 34vw;
+  left: 37vw;
 }
 /*---- FIN chapitre 5 ----*/
 
@@ -267,37 +312,42 @@ header h1 {
 #escalier6 {
   position: absolute;
   transform: scaleX(-1);
-  bottom: 3vh;
-  left: 40.5vw;
-  height: 40vh;
+  bottom: 7vh;
+  left: 38vw;
+  height: 30.4vh;
+  width: 17.4vw;
 }
 
 #feu6 {
   position: absolute;
   bottom: 9vh;
-  right: 60vw;
-  height: 12vh;
+  right: 60.2vw;
+  height: 10.6vh;
+  width: 5.2vw;
 }
 
 #kev6 {
   position: absolute;
   bottom: 4vh;
-  left: 70vw;
+  left: 65vw;
   transform: scaleX(-1);
-  height: 30vh;
+  height: 21.7vh;
+  width: 5.1vw;
 }
 
 #bombe6 {
   position: absolute;
   bottom: 5vh;
-  left: 63vw;
-  height: 10vh;
+  left: 60vw;
+  height: 9.1vh;
+  width: 4vw;
 }
 
 #fuse6 {
   position: absolute;
   right: 55vw;
-  height: 70vh;
+  height: 60.8vh;
+  width: 15.9vw;
   bottom: 10vh;
 }
 /*---- FIN chapitre 6 ----*/
@@ -316,34 +366,34 @@ header h1 {
 
 .meteorite {
   position: relative;
-  height: 66vh;
-  width: 42vw;
+  height: 60vh;
+  width: 35vw;
   left: 25vw;
   top: 15vh;
 }
 
 #meteorite3 {
   position: absolute;
-  height: 46vh;
-  width: 28vw;
-  top: 0;
-  left: 0.7vw;
+  height: 36vh;
+  width: 21.5vw;
+  top: 1vh;
+  left: 3.8vw;
 }
 
 #meteorite4 {
   position: absolute;
-  width: 24vw;
-  height: 54vh;
-  right: 1.5vw;
-  top: 5vh;
+  width: 18.4vw;
+  height: 42.5vh;
+  top: 4.9vh;
+  right: 0.3vw;
 }
 
 #meteorite5 {
   position: absolute;
-  height: 40vh;
-  width: 28vw;
-  bottom: -2.5vh;
-  left: 4.9vw;
+  height: 31.5vh;
+  width: 22.3vw;
+  left: 6.7vw;
+  bottom: 5.4vh;
 }
 /*---- FIN chapitre 7 ----*/
 
