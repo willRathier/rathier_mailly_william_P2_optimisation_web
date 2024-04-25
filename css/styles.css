@@ -49,7 +49,7 @@ header h1 {
 img {
   border: 1px solid var(--rouge);
 }
-
+/*---- START chapitre 1 ----*/
 #chapitre-1 {
   position: relative;
   height: 100vh;
@@ -64,14 +64,12 @@ img {
 #lune {
   width: 15vw;
   height: 30vh;
-  aspect-ratio: 1/1;
   position: absolute;
   left: 80vw;
   bottom: 35vh;
 }
 
 #terre {
-  aspect-ratio: 1/1;
   height: 60vh;
   width: 25vw;
   position: absolute;
@@ -81,13 +79,14 @@ img {
 
 #meteorite {
   position: absolute;
-  aspect-ratio: 1/1;
   height: 45vh;
   width: 25vw;
   top: 10vh;
   left: 10vw;
 }
+/*---- FIN chapitre 1 ----*/
 
+/*---- START chapitre 2 ----*/
 #chapitre-2 {
   position: relative;
   height: 100vh;
@@ -99,6 +98,24 @@ img {
   border: solid 1px red;
 }
 
+#kevin {
+  position: absolute;
+  height: 55vh;
+  width: 40vw;
+  left: 30vw;
+  bottom: 20vh;
+}
+
+#sofa {
+  position: absolute;
+  width: 50vw;
+  height: 55vh;
+  bottom: 1vh;
+  left: 25vw;
+}
+/*---- FIN chapitre 2 ----*/
+
+/*---- START chapitre 3 ----*/
 #chapitre-3 {
   background-image: url(../img/elements_chap3/fond_arriere.svg);
   position: relative;
@@ -110,6 +127,37 @@ img {
   border: solid 1px red;
 }
 
+#fond_avant {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  left: 0;
+}
+
+#kev2 {
+  position: absolute;
+  height: 50vh;
+  bottom: 5vh;
+  left: 38vw;
+}
+
+#pince {
+  position: absolute;
+  height: 50vh;
+  top: -9vh;
+  left: 36.5vw;
+}
+
+#casque {
+  position: absolute;
+  height: 17vh;
+  left: 38vw;
+  bottom: 50vh;
+}
+/*---- FIN chapitre 3 ----*/
+
+/*---- START chapitre 4 ----*/
 #chapitre-4 {
   position: relative;
   height: 100vh;
@@ -121,6 +169,30 @@ img {
   border: solid 1px red;
 }
 
+#spaceship {
+  position: absolute;
+  height: 85vh;
+  bottom: 3vh;
+  right: 15vw;
+}
+
+#stairs {
+  position: absolute;
+  height: 40vh;
+  right: 28vw;
+  bottom: 3vh;
+}
+
+#feufeu {
+  position: absolute;
+  height: 15vh;
+  width: 5vw;
+  bottom: 3vh;
+  right: 21.3vw;
+}
+/*---- FIN chapitre 4 ----*/
+
+/*---- START chapitre 5 ----*/
 #chapitre-5 {
   position: relative;
   height: 100vh;
@@ -131,7 +203,9 @@ img {
   background-repeat: no-repeat;
   border: solid 1px red;
 }
+/*---- FIN chapitre 5 ----*/
 
+/*---- START chapitre 6 ----*/
 #chapitre-6 {
   position: relative;
   height: 100vh;
@@ -142,7 +216,9 @@ img {
   background-repeat: no-repeat;
   border: solid 1px red;
 }
+/*---- FIN chapitre 6 ----*/
 
+/*---- START chapitre 7 ----*/
 #chapitre-7 {
   position: relative;
   height: 100vh;
@@ -153,6 +229,7 @@ img {
   background-repeat: no-repeat;
   border: solid 1px red;
 }
+/*---- FIN chapitre 7 ----*/
 
 /*------HTML SPRITESHEET------*/
 .is-scrolling {
