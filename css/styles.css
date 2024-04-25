@@ -46,9 +46,6 @@ header h1 {
   font-size: 15vw;
 }
 
-img {
-  border: 1px solid var(--rouge);
-}
 /*---- START chapitre 1 ----*/
 #chapitre-1 {
   position: relative;
@@ -144,9 +141,9 @@ img {
 
 #pince {
   position: absolute;
-  height: 50vh;
-  top: -9vh;
-  left: 36.5vw;
+  height: 40vh;
+  top: 0vh;
+  left: 37.7vw;
 }
 
 #casque {
@@ -190,6 +187,29 @@ img {
   bottom: 3vh;
   right: 21.3vw;
 }
+
+#kev3 {
+  position: absolute;
+  height: 32vh;
+  bottom: 2vh;
+  left: 30vw;
+}
+
+#nuage1 {
+  position: absolute;
+  height: 25vh;
+  width: 43vw;
+  right: 3vw;
+  bottom: 0;
+}
+
+#numage2 {
+  position: absolute;
+  height: 25vh;
+  width: 43vw;
+  right: 3vw;
+  bottom: 0;
+}
 /*---- FIN chapitre 4 ----*/
 
 /*---- START chapitre 5 ----*/
@@ -202,6 +222,33 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+}
+
+#bombe {
+  position: absolute;
+  height: 50vh;
+  bottom: -5vh;
+  right: 10vw;
+}
+
+#kev4 {
+  position: absolute;
+  bottom: 0;
+  left: 34vw;
+  height: 90vh;
+}
+
+#meteorite2 {
+  position: absolute;
+  height: 15vh;
+  top: 5vh;
+  left: 33vw;
+}
+
+#volant {
+  position: absolute;
+  bottom: 15vh;
+  left: 34vw;
 }
 /*---- FIN chapitre 5 ----*/
 
@@ -216,6 +263,43 @@ img {
   background-repeat: no-repeat;
   border: solid 1px red;
 }
+
+#escalier6 {
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 3vh;
+  left: 40.5vw;
+  height: 40vh;
+}
+
+#feu6 {
+  position: absolute;
+  bottom: 9vh;
+  right: 60vw;
+  height: 12vh;
+}
+
+#kev6 {
+  position: absolute;
+  bottom: 4vh;
+  left: 70vw;
+  transform: scaleX(-1);
+  height: 30vh;
+}
+
+#bombe6 {
+  position: absolute;
+  bottom: 5vh;
+  left: 63vw;
+  height: 10vh;
+}
+
+#fuse6 {
+  position: absolute;
+  right: 55vw;
+  height: 70vh;
+  bottom: 10vh;
+}
 /*---- FIN chapitre 6 ----*/
 
 /*---- START chapitre 7 ----*/
@@ -228,6 +312,38 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+}
+
+.meteorite {
+  position: relative;
+  height: 66vh;
+  width: 42vw;
+  left: 25vw;
+  top: 15vh;
+}
+
+#meteorite3 {
+  position: absolute;
+  height: 46vh;
+  width: 28vw;
+  top: 0;
+  left: 0.7vw;
+}
+
+#meteorite4 {
+  position: absolute;
+  width: 24vw;
+  height: 54vh;
+  right: 1.5vw;
+  top: 5vh;
+}
+
+#meteorite5 {
+  position: absolute;
+  height: 40vh;
+  width: 28vw;
+  bottom: -2.5vh;
+  left: 4.9vw;
 }
 /*---- FIN chapitre 7 ----*/
 
