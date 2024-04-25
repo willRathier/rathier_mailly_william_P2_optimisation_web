@@ -65,17 +65,18 @@ header h1 {
 #text-1 {
   color: var(--blanc);
   position: absolute;
-  font-size: 4vh;
-  left: 7vw;
+  width: 50vw;
+  font-size: 6vh;
+  left: 15vw;
   text-align: center;
-  bottom: 10vh;
+  bottom: 5vh;
 }
 
 #lune {
   width: 15vw;
   height: 30vh;
   position: absolute;
-  left: 80vw;
+  left: 60vw;
   bottom: 35vh;
 }
 
@@ -203,6 +204,15 @@ header h1 {
   border: solid 1px red;
 }
 
+#text-4 {
+  position: absolute;
+  color: var(--blanc);
+  font-size: 6vh;
+  width: 30vw;
+  top: 10vh;
+  left: 32vw;
+}
+
 #spaceship {
   position: absolute;
   height: 77.7vh;
@@ -264,6 +274,19 @@ header h1 {
   border: solid 1px red;
 }
 
+#text-5 {
+  position: absolute;
+  text-align: right;
+  color: var(--blanc);
+  font-size: 5vh;
+  width: 17vw;
+  right: 2vw;
+  height: 60vh;
+  top: 1vh;
+  margin: 0;
+  padding: 0;
+}
+
 #bombe {
   position: absolute;
   height: 38.1vh;
@@ -307,6 +330,16 @@ header h1 {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+}
+
+#text-6 {
+  color: var(--blanc);
+  position: absolute;
+  font-size: 7vh;
+  width: 30vw;
+  right: 10vw;
+  top: 5vh;
+  text-align: center;
 }
 
 #escalier6 {
@@ -362,6 +395,16 @@ header h1 {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+}
+
+#text-7 {
+  color: var(--blanc);
+  position: absolute;
+  font-size: 7vh;
+  text-align: left;
+  width: 55vw;
+  bottom: 2vh;
+  left: 5vw;
 }
 
 .meteorite {
