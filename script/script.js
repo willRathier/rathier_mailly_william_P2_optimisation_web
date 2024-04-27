@@ -142,3 +142,43 @@ clickChapter5.addEventListener("click", function () {
       0
     );
 });
+/*--- Animation Chapitre 6 ---*/
+
+/*--- Animation Chapitre 7 ---*/
+let clickChapter7 = document.querySelector("#chapitre-7");
+clickChapter7.addEventListener("click", function () {
+  gsap
+    .timeline()
+    .to(
+      "#meteorite3",
+      {
+        x: -175,
+        y: -125,
+        rotation: -75,
+        scale: 0.3,
+        duration: 4,
+      },
+      0
+    )
+    .to(
+      "#meteorite4",
+      {
+        x: 250,
+        y: -125,
+        rotation: 75,
+        scale: 0.3,
+        duration: 4,
+      },
+      0
+    )
+    .to(
+      "#meteorite5",
+      {
+        y: 250,
+        rotation: -75,
+        scale: 0.3,
+        duration: 4,
+      },
+      0
+    );
+});
