@@ -143,7 +143,7 @@ clickChapter5.addEventListener("click", function () {
       "#meteorite2",
       {
         x: "4vw",
-        y: 85,
+        y: "7.9vh",
         rotation: 90,
         duration: 20,
       },
@@ -160,10 +160,11 @@ clickChapter7.addEventListener("click", function () {
     .to(
       "#meteorite3",
       {
-        x: -175,
-        y: -125,
+        x: "-13.6vw",
+        y: "-11.6vh",
         rotation: -75,
         scale: 0.3,
+        opacity: 0.5,
         duration: 4,
       },
       0
@@ -171,10 +172,11 @@ clickChapter7.addEventListener("click", function () {
     .to(
       "#meteorite4",
       {
-        x: 250,
-        y: -125,
+        x: "13vw",
+        y: "11.6vh",
         rotation: 75,
         scale: 0.3,
+        opacity: 0.5,
         duration: 4,
       },
       0
@@ -182,9 +184,10 @@ clickChapter7.addEventListener("click", function () {
     .to(
       "#meteorite5",
       {
-        y: 250,
+        y: "20vh",
         rotation: -75,
         scale: 0.3,
+        opacity: 0.5,
         duration: 4,
       },
       0
