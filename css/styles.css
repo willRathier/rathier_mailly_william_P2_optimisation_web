@@ -202,14 +202,14 @@ ul.technique-gsap li {
   height: 42.5vh;
   width: 12.4vw;
   top: 10vh;
-  left: 36vw;
+  left: 37vw;
 }
 
 #casque {
   position: absolute;
   height: 14vh;
   width: 8.75vw;
-  left: 38vw;
+  left: 38.8vw;
   bottom: 40vh;
 }
 /*---- FIN chapitre 3 ----*/
@@ -247,17 +247,17 @@ ul.technique-gsap li {
   position: absolute;
   height: 30.4vh;
   width: 17.4vw;
-  right: 28vw;
+  right: 33vw;
   bottom: 5vh;
 }
 
-#feufeu {
+/*#feufeu {
   position: absolute;
   height: 13.6vh;
   width: 6.5vw;
-  bottom: 3vh;
-  right: 22.9vw;
-}
+  bottom: 2vh;
+  right: 25vw;
+}*/
 
 #kev3 {
   position: absolute;
@@ -281,6 +281,32 @@ ul.technique-gsap li {
   width: 28.5vw;
   right: 12vw;
   bottom: 2vh;
+}
+
+.feu {
+  border: 1px solid red;
+  position: absolute;
+  bottom: 0.5vh;
+  right: 25vw;
+  height: 15.2vh;
+  width: 7.5vw;
+  background-image: url(../img/spritesheet/spritesheet-feu.png);
+  animation: feu 0.5s steps(19) infinite;
+  aspect-ratio: 25/528;
+  animation-play-state: paused;
+}
+
+@keyframes feu {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
+body.is-scrolling .feu {
+  animation-play-state: running;
 }
 /*---- FIN chapitre 4 ----*/
 
@@ -329,16 +355,41 @@ ul.technique-gsap li {
   position: absolute;
   height: 13.3vh;
   width: 8.3vw;
-  top: 5vh;
+  top: 14vh;
   left: 33vw;
 }
 
-#volant {
+/*#volant {
   position: absolute;
   height: 22vh;
   width: 24.8vw;
   bottom: 15vh;
   left: 37vw;
+}*/
+
+.volant {
+  position: absolute;
+  height: 22vh;
+  width: 24.8vw;
+  bottom: 15vh;
+  left: 35vw;
+  background-image: url(../img/spritesheet/spritesheet_volant.png);
+  animation: steering 0.7s steps(20) infinite;
+  aspect-ratio: 2/21;
+  animation-play-state: paused;
+}
+
+@keyframes steering {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
+body.is-scrolling .volant {
+  animation-play-state: running;
 }
 /*---- FIN chapitre 5 ----*/
 
@@ -373,12 +424,37 @@ ul.technique-gsap li {
   width: 17.4vw;
 }
 
-#feu6 {
+/*#feu6 {
   position: absolute;
   bottom: 9vh;
   right: 60.2vw;
   height: 10.6vh;
   width: 5.2vw;
+}*/
+
+.feufeu {
+  position: absolute;
+  bottom: 5vh;
+  left: 32.6vw;
+  height: 15.2vh;
+  width: 7.5vw;
+  background-image: url(../img/spritesheet/spritesheet-feu.png);
+  animation: feu 0.5s steps(19) infinite;
+  aspect-ratio: 25/528;
+  animation-play-state: paused;
+}
+
+@keyframes feu {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
+body.is-scrolling .feufeu {
+  animation-play-state: running;
 }
 
 #kev6 {
@@ -441,8 +517,8 @@ ul.technique-gsap li {
   position: absolute;
   height: 36vh;
   width: 21.5vw;
-  top: 1vh;
-  left: 3.8vw;
+  top: 1.1vh;
+  left: 0.5vw;
 }
 
 #meteorite4 {
@@ -450,15 +526,15 @@ ul.technique-gsap li {
   width: 18.4vw;
   height: 42.5vh;
   top: 4.9vh;
-  right: 0.3vw;
+  right: 1vw;
 }
 
 #meteorite5 {
   position: absolute;
   height: 31.5vh;
   width: 22.3vw;
-  left: 6.7vw;
-  bottom: 5.4vh;
+  left: 4.3vw;
+  bottom: 5.3vh;
 }
 /*---- FIN chapitre 7 ----*/
 
