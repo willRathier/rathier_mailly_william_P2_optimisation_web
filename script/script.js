@@ -1,4 +1,4 @@
-gsap.to(".arrow", { y: "7vh", duration: 1, repeat: -1, yoyo: true });
+gsap.to(".arrow", { y: "10vh", duration: 1, repeat: -1, yoyo: true });
 
 let timer = setTimeout(100);
 
@@ -25,13 +25,13 @@ window.addEventListener("scrollend", function () {
 let clickChapter1 = document.querySelector("#chapitre-1");
 clickChapter1.addEventListener("click", function () {
   gsap.to("#lune", {
-    x: 300,
+    x: "20vw",
     duration: 6,
   });
 
   gsap.to("#meteorite", {
-    x: 400,
-    y: 50,
+    x: "20.8vw",
+    y: "4.6vh",
     rotation: 90,
     duration: 10,
   });
@@ -49,19 +49,19 @@ clickChapter2.addEventListener("click", function () {
     })
     .to("#kevin", {
       duration: 1,
-      y: -30,
+      y: "-2.7vh",
     })
     .to("#kevin", {
       duration: 1,
-      x: 100,
+      x: "5.2vw",
     })
     .to("#kevin", {
       duration: 1,
-      y: 80,
-      x: 200,
+      y: "7.4vh",
+      x: "10.4vw",
     })
     .to("#kevin", {
-      x: 900,
+      x: "55vw",
       duration: 4,
     });
 });
@@ -74,7 +74,7 @@ clickChapter3.addEventListener("click", function () {
     .to(
       "#pince",
       {
-        y: 50,
+        y: "8vh",
         duration: 1,
         repeat: 1,
         yoyo: true,
@@ -84,7 +84,7 @@ clickChapter3.addEventListener("click", function () {
     .to(
       "#casque",
       {
-        y: 50,
+        y: "7vh",
         duration: 1,
       },
       0.5
@@ -92,7 +92,7 @@ clickChapter3.addEventListener("click", function () {
     .to(
       "#kev2",
       {
-        x: 800,
+        x: "100vw",
         duration: 4,
       },
       3
@@ -100,8 +100,8 @@ clickChapter3.addEventListener("click", function () {
     .to(
       "#casque",
       {
-        x: 800,
-        duration: 4,
+        x: "100vw",
+        duration: 5,
       },
       3
     );
@@ -113,14 +113,22 @@ clickChapter4.addEventListener("click", function () {
   gsap
     .timeline()
     .to("#kev3", {
-      x: 350,
+      x: "15vw",
       duration: 3,
     })
     .to("#kev3", {
-      x: 545,
-      y: -200,
+      x: "29vw",
+      y: "-25vh",
       duration: 3,
-    });
+    })
+    .to(
+      "#kev3",
+      {
+        opacity: 0,
+        duration: 1,
+      },
+      5.5
+    );
 });
 /*--- Animation chapitre 5 ---*/
 let clickChapter5 = document.querySelector("#chapitre-5");
@@ -134,8 +142,8 @@ clickChapter5.addEventListener("click", function () {
     .to(
       "#meteorite2",
       {
-        x: 75,
-        y: 85,
+        x: "4vw",
+        y: "7.9vh",
         rotation: 90,
         duration: 20,
       },
@@ -152,10 +160,11 @@ clickChapter7.addEventListener("click", function () {
     .to(
       "#meteorite3",
       {
-        x: -175,
-        y: -125,
+        x: "-13.6vw",
+        y: "-11.6vh",
         rotation: -75,
         scale: 0.3,
+        opacity: 0.5,
         duration: 4,
       },
       0
@@ -163,10 +172,11 @@ clickChapter7.addEventListener("click", function () {
     .to(
       "#meteorite4",
       {
-        x: 250,
-        y: -125,
+        x: "13vw",
+        y: "11.6vh",
         rotation: 75,
         scale: 0.3,
+        opacity: 0.5,
         duration: 4,
       },
       0
@@ -174,9 +184,10 @@ clickChapter7.addEventListener("click", function () {
     .to(
       "#meteorite5",
       {
-        y: 250,
+        y: "20vh",
         rotation: -75,
         scale: 0.3,
+        opacity: 0.5,
         duration: 4,
       },
       0
