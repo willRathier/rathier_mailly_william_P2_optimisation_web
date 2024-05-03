@@ -201,6 +201,15 @@ gsap
     },
     6
   )
+  .from(
+    "#text-4",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  )
   .fromTo(
     "#nuage1",
     {
@@ -229,15 +238,9 @@ gsap
     },
     7
   )
-  .from(
-    "#text-4",
-    {
-      duration: 3,
-      text: " ",
-      ease: "none",
-    },
-    0.5
-  );
+  .to("#chapitre-4", {
+    opacity: 0,
+  });
 /*--- Animation chapitre 5 ---*/
 gsap
   .timeline({
@@ -248,6 +251,9 @@ gsap
       end: "bottom top",
       pin: true,
     },
+  })
+  .from("#chapitre-5", {
+    opacity: 0,
   })
   .from("#kev4", {
     scale: 2,
