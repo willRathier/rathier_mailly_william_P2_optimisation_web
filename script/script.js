@@ -52,6 +52,18 @@ gsap
     },
     0
   )
+  .fromTo(
+    "#chapitre-1",
+    {
+      backgroundSize: "100%",
+    },
+    {
+      backgroundSize: "400%",
+      ease: "none",
+      duration: 6,
+    },
+    0.5
+  )
   .to(
     "#lune",
     {
@@ -69,7 +81,16 @@ gsap
     },
     0.3
   );
-
+gsap.from("#text-1", {
+  xPercent: 300,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#chapitre-1",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
 /*-- Animation chapitre 2 --*/
 var tl1 = gsap.timeline({
   scrollTrigger: {
@@ -110,9 +131,19 @@ tl1
     x: "10.4vw",
   })
   .to("#kevin", {
-    x: "55vw",
-    duration: 4,
-  });
+    x: "75vw",
+    duration: 3,
+    opacity: 0,
+  })
+  .to(
+    "#chapitre-2",
+    {
+      x: "-200vh",
+      opacity: 0,
+      duration: 3,
+    },
+    7.5
+  );
 
 /*---Animation chapitre 3---*/
 gsap
@@ -124,6 +155,11 @@ gsap
       end: "bottom top",
       pin: true,
     },
+  })
+  .from("#chapitre-3", {
+    x: "-200vh",
+    opacity: 0,
+    duration: 1.5,
   })
   .from(
     "#text-3",
@@ -320,7 +356,7 @@ gsap
       y: "-40vh",
       opacity: 0,
     },
-    0.5
+    4
   );
 /*--- Animation Chapitre 7 ---*/
 
