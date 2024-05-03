@@ -459,13 +459,17 @@ body.is-scrolling .feufeu {
 #kev6 {
   position: absolute;
   bottom: 4vh;
-  left: 65vw;
+  left: 55vw;
   transform: scaleX(-1);
   height: 21.7vh;
   width: 5.1vw;
 }
 
-#bombe6 {
+#explosion {
+  visibility: hidden;
+}
+
+#bombeMorph {
   position: absolute;
   bottom: 5vh;
   left: 60vw;
@@ -479,6 +483,19 @@ body.is-scrolling .feufeu {
   height: 60.8vh;
   width: 15.9vw;
   bottom: 10vh;
+}
+
+#Calque_1 {
+  border: 1px solid red;
+  position: absolute;
+  width: 5vw;
+  height: 10vh;
+  left: 57vw;
+  bottom: 5vh;
+}
+
+#Calque_2 {
+  visibility: hidden;
 }
 /*---- FIN chapitre 6 ----*/
 
@@ -538,6 +555,16 @@ body.is-scrolling .feufeu {
 /*---- FIN chapitre 7 ----*/
 
 /*------HTML SPRITESHEET------*/
+#explosion_test {
+  visibility: hidden;
+}
+#bombeMorph_test {
+  position: absolute;
+  bottom: 5vh;
+  left: 60vw;
+  height: 9.1vh;
+  width: 4vw;
+}
 .is-scrolling {
   height: 1000px;
 }

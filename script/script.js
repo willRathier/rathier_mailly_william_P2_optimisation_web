@@ -1,3 +1,11 @@
+/*
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(TextPlugin);
+*/
+
 gsap.to(".arrow", { y: "10vh", duration: 1, repeat: -1, yoyo: true });
 
 let timer = setTimeout(100);
@@ -22,174 +30,338 @@ window.addEventListener("scrollend", function () {
 
 /*-----INSTRUCTION 4-----*/
 /*-- Animation chapitre 1 --*/
-let clickChapter1 = document.querySelector("#chapitre-1");
-clickChapter1.addEventListener("click", function () {
-  gsap.to("#lune", {
-    x: "20vw",
-    duration: 6,
-  });
+gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
-  gsap.to("#meteorite", {
-    x: "20.8vw",
-    y: "4.6vh",
-    rotation: 90,
-    duration: 10,
-  });
-});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre-1",
+      pin: true,
+      scrub: 0.3,
+      start: "top top",
+      end: "bottom top",
+    },
+  })
+  .to("#lune", {
+    x: "20vw",
+  })
+  .to(
+    "#meteorite",
+    {
+      x: "20.8vw",
+      y: "4.6vh",
+      rotation: 90,
+    },
+    0
+  )
+  .from(
+    "#text-1",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  );
 
 /*-- Animation chapitre 2 --*/
-let clickChapter2 = document.querySelector("#chapitre-2");
-clickChapter2.addEventListener("click", function () {
-  var tl1 = gsap.timeline();
-
-  tl1
-    .from("#sofa", {
-      scale: 50,
-      duration: 2,
-    })
-    .to("#kevin", {
-      duration: 1,
-      y: "-2.7vh",
-    })
-    .to("#kevin", {
-      duration: 1,
-      x: "5.2vw",
-    })
-    .to("#kevin", {
-      duration: 1,
-      y: "7.4vh",
-      x: "10.4vw",
-    })
-    .to("#kevin", {
-      x: "55vw",
-      duration: 4,
-    });
+var tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre-2",
+    start: "top top",
+    end: "bottom top",
+    pin: true,
+    toggleActions: "restart complete reverse reset",
+  },
 });
+
+tl1
+  .from("#sofa", {
+    scale: 4,
+    duration: 2,
+  })
+  .to("#kevin", {
+    duration: 1,
+    y: "-2.7vh",
+  })
+  .to("#kevin", {
+    duration: 1,
+    x: "5.2vw",
+  })
+  .to("#kevin", {
+    duration: 1,
+    y: "7.4vh",
+    x: "10.4vw",
+  })
+  .to("#kevin", {
+    x: "55vw",
+    duration: 4,
+  })
+  .from(
+    "#text-2",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  );
 
 /*---Animation chapitre 3---*/
-let clickChapter3 = document.querySelector("#chapitre-3");
-clickChapter3.addEventListener("click", function () {
-  gsap
-    .timeline()
-    .to(
-      "#pince",
-      {
-        y: "8vh",
-        duration: 1,
-        repeat: 1,
-        yoyo: true,
-      },
-      0.5
-    )
-    .to(
-      "#casque",
-      {
-        y: "7vh",
-        duration: 1,
-      },
-      0.5
-    )
-    .to(
-      "#kev2",
-      {
-        x: "100vw",
-        duration: 4,
-      },
-      3
-    )
-    .to(
-      "#casque",
-      {
-        x: "100vw",
-        duration: 5,
-      },
-      3
-    );
-});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre-3",
+      scrub: 0.5,
+      start: "top top",
+      end: "bottom top",
+      pin: true,
+    },
+  })
+  .to(
+    "#pince",
+    {
+      y: "8vh",
+      duration: 1,
+      repeat: 1,
+      yoyo: true,
+    },
+    0.5
+  )
+  .to(
+    "#casque",
+    {
+      y: "7vh",
+      duration: 1,
+    },
+    0.5
+  )
+  .to(
+    "#kev2",
+    {
+      x: "55vw",
+      duration: 4,
+    },
+    3
+  )
+  .to(
+    "#casque",
+    {
+      x: "64.5vw",
+      duration: 5,
+    },
+    3
+  )
+  .from(
+    "#text-3",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  );
 
 /*-- Animation chapitre 4 --*/
-let clickChapter4 = document.querySelector("#chapitre-4");
-clickChapter4.addEventListener("click", function () {
-  gsap
-    .timeline()
-    .to("#kev3", {
-      x: "15vw",
-      duration: 3,
-    })
-    .to("#kev3", {
-      x: "29vw",
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre-4",
+      scrub: 1,
+      start: "top top",
+      end: "bottom top",
+      pin: true,
+    },
+  })
+  .to("#kev3", {
+    x: "15vw",
+  })
+  .to("#kev3", {
+    x: "29vw",
+    y: "-25vh",
+  })
+  .to(
+    "#kev3",
+    {
+      opacity: 0,
+    },
+    4
+  )
+  .to("#stairs", {
+    x: "10vw",
+    y: "-20vh",
+    rotation: -45,
+    opacity: 0.1,
+  })
+  .from(
+    ".feu",
+    {
+      y: "-12vh",
+    },
+    6
+  )
+  .fromTo(
+    "#nuage1",
+    {
+      x: 0,
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      x: "-30vw",
       y: "-25vh",
+      scale: 10,
+    },
+    7.3
+  )
+  .fromTo(
+    "#numage2",
+    {
+      x: 0,
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      x: "-30vw",
+      y: "-25vh",
+      scale: 10,
+    },
+    7
+  )
+  .from(
+    "#text-4",
+    {
       duration: 3,
-    })
-    .to(
-      "#kev3",
-      {
-        opacity: 0,
-        duration: 1,
-      },
-      5.5
-    );
-});
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  );
 /*--- Animation chapitre 5 ---*/
-let clickChapter5 = document.querySelector("#chapitre-5");
-clickChapter5.addEventListener("click", function () {
-  gsap
-    .timeline()
-    .from("#kev4", {
-      scale: 2,
-      duration: 1.5,
-    })
-    .to(
-      "#meteorite2",
-      {
-        x: "4vw",
-        y: "7.9vh",
-        rotation: 90,
-        duration: 20,
-      },
-      0
-    );
-});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre-5",
+      scrub: 0.5,
+      start: "top top",
+      end: "bottom top",
+      pin: true,
+    },
+  })
+  .from("#kev4", {
+    scale: 2,
+    duration: 1.5,
+  })
+  .to(
+    "#meteorite2",
+    {
+      x: "4vw",
+      y: "7.9vh",
+      rotation: 90,
+      duration: 20,
+    },
+    0
+  )
+  .from(
+    "#text-5",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  );
 /*--- Animation Chapitre 6 ---*/
-
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre-6",
+      scrub: 0.5,
+      start: "top top",
+      end: "bottom top",
+      pin: true,
+    },
+  })
+  .to(".feufeu", {
+    opacity: 0,
+  })
+  .from("#kev6", {
+    x: "-20vw",
+    y: "-40vh",
+    opacity: 0,
+  })
+  .to("#kev6", {
+    x: "13vw",
+  })
+  .from(
+    "#bombeMorph",
+    {
+      x: "-22vw",
+      y: "-40vh",
+      opacity: 0,
+    },
+    0.5
+  )
+  .from(
+    "#text-6",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  );
 /*--- Animation Chapitre 7 ---*/
-let clickChapter7 = document.querySelector("#chapitre-7");
-clickChapter7.addEventListener("click", function () {
-  gsap
-    .timeline()
-    .to(
-      "#meteorite3",
-      {
-        x: "-13.6vw",
-        y: "-11.6vh",
-        rotation: -75,
-        scale: 0.3,
-        opacity: 0.5,
-        duration: 4,
-      },
-      0
-    )
-    .to(
-      "#meteorite4",
-      {
-        x: "13vw",
-        y: "11.6vh",
-        rotation: 75,
-        scale: 0.3,
-        opacity: 0.5,
-        duration: 4,
-      },
-      0
-    )
-    .to(
-      "#meteorite5",
-      {
-        y: "20vh",
-        rotation: -75,
-        scale: 0.3,
-        opacity: 0.5,
-        duration: 4,
-      },
-      0
-    );
-});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre-7",
+      scrub: 0.5,
+      start: "top top",
+      end: "bottom top",
+      pin: true,
+    },
+  })
+  .to(
+    "#meteorite3",
+    {
+      x: "-13.6vw",
+      y: "-11.6vh",
+      rotation: -75,
+      scale: 0.3,
+      opacity: 0.5,
+    },
+    0
+  )
+  .to(
+    "#meteorite4",
+    {
+      x: "13vw",
+      y: "11.6vh",
+      rotation: 75,
+      scale: 0.3,
+      opacity: 0.5,
+    },
+    0
+  )
+  .to(
+    "#meteorite5",
+    {
+      y: "20vh",
+      rotation: -75,
+      scale: 0.3,
+      opacity: 0.5,
+    },
+    0
+  )
+  .from(
+    "#text-7",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  );
