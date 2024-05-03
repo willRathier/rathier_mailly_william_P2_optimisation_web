@@ -43,18 +43,6 @@ gsap
       end: "bottom top",
     },
   })
-  .to("#lune", {
-    x: "20vw",
-  })
-  .to(
-    "#meteorite",
-    {
-      x: "20.8vw",
-      y: "4.6vh",
-      rotation: 90,
-    },
-    0
-  )
   .from(
     "#text-1",
     {
@@ -62,7 +50,24 @@ gsap
       text: " ",
       ease: "none",
     },
-    0.5
+    0
+  )
+  .to(
+    "#lune",
+    {
+      x: "20vw",
+    },
+    0.3
+  )
+  .to(
+    "#meteorite",
+    {
+      duration: 5,
+      x: "23vw",
+      y: "4.6vh",
+      rotation: 90,
+    },
+    0.3
   );
 
 /*-- Animation chapitre 2 --*/
@@ -77,10 +82,20 @@ var tl1 = gsap.timeline({
 });
 
 tl1
+
   .from("#sofa", {
     scale: 4,
     duration: 2,
   })
+  .from(
+    "#text-2",
+    {
+      duration: 2,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  )
   .to("#kevin", {
     duration: 1,
     y: "-2.7vh",
@@ -97,16 +112,7 @@ tl1
   .to("#kevin", {
     x: "55vw",
     duration: 4,
-  })
-  .from(
-    "#text-2",
-    {
-      duration: 3,
-      text: " ",
-      ease: "none",
-    },
-    0.5
-  );
+  });
 
 /*---Animation chapitre 3---*/
 gsap
@@ -119,6 +125,15 @@ gsap
       pin: true,
     },
   })
+  .from(
+    "#text-3",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  )
   .to(
     "#pince",
     {
@@ -152,15 +167,6 @@ gsap
       duration: 5,
     },
     3
-  )
-  .from(
-    "#text-3",
-    {
-      duration: 3,
-      text: " ",
-      ease: "none",
-    },
-    0.5
   );
 
 /*-- Animation chapitre 4 --*/
@@ -252,8 +258,15 @@ gsap
       pin: true,
     },
   })
+
   .from("#chapitre-5", {
     opacity: 0,
+    duration: 0.5,
+  })
+  .from("#text-5", {
+    duration: 3,
+    text: " ",
+    ease: "none",
   })
   .from("#kev4", {
     scale: 2,
@@ -268,15 +281,6 @@ gsap
       duration: 20,
     },
     0
-  )
-  .from(
-    "#text-5",
-    {
-      duration: 3,
-      text: " ",
-      ease: "none",
-    },
-    0.5
   );
 /*--- Animation Chapitre 6 ---*/
 gsap
@@ -289,6 +293,15 @@ gsap
       pin: true,
     },
   })
+  .from(
+    "#text-6",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  )
   .to(".feufeu", {
     opacity: 0,
   })
@@ -308,15 +321,6 @@ gsap
       opacity: 0,
     },
     0.5
-  )
-  .from(
-    "#text-6",
-    {
-      duration: 3,
-      text: " ",
-      ease: "none",
-    },
-    0.5
   );
 /*--- Animation Chapitre 7 ---*/
 
@@ -330,6 +334,15 @@ gsap
       pin: true,
     },
   })
+  .from(
+    "#text-7",
+    {
+      duration: 3,
+      text: " ",
+      ease: "none",
+    },
+    0.5
+  )
   .to(
     "#meteorite3",
     {
@@ -361,13 +374,4 @@ gsap
       opacity: 0.5,
     },
     0
-  )
-  .from(
-    "#text-7",
-    {
-      duration: 3,
-      text: " ",
-      ease: "none",
-    },
-    0.5
   );

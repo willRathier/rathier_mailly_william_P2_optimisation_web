@@ -292,7 +292,6 @@ ul.technique-gsap li {
   background-image: url(../img/spritesheet/spritesheet-feu.png);
   animation: feu 0.5s steps(19) infinite;
   aspect-ratio: 25/528;
-  animation-play-state: paused;
 }
 
 @keyframes feu {
