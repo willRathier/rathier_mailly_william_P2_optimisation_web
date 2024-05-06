@@ -88,7 +88,7 @@ gsap.from("#text-1", {
     trigger: "#chapitre-1",
     start: "top bottom",
     end: "bottom top",
-    scrub: true,
+    scrub: 1,
   },
 });
 /*-- Animation chapitre 2 --*/
@@ -150,7 +150,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-3",
-      scrub: 0.5,
+      scrub: 1,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -288,7 +288,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-5",
-      scrub: 0.5,
+      scrub: 1,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -323,7 +323,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-6",
-      scrub: 0.5,
+      scrub: 1,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -364,7 +364,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-7",
-      scrub: 0.5,
+      scrub: 1,
       start: "top top",
       end: "bottom top",
       pin: true,
