@@ -495,17 +495,12 @@ body.is-scrolling .feufeu {
   bottom: 10vh;
 }
 
-#Calque_1 {
-  border: 1px solid red;
+#svg-2 {
   position: absolute;
-  width: 5vw;
-  height: 10vh;
-  left: 57vw;
-  bottom: 5vh;
-}
-
-#Calque_2 {
-  visibility: hidden;
+  width: 157.34vw;
+  height: 85vh;
+  left: -4.8vw;
+  top: -29vh;
 }
 /*---- FIN chapitre 6 ----*/
 

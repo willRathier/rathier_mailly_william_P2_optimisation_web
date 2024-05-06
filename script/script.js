@@ -32,6 +32,7 @@ window.addEventListener("scrollend", function () {
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 
 /*-----INSTRUCTION 4-----*/
 /*-- Animation chapitre 1 --*/
@@ -429,6 +430,16 @@ gsap
   .to(".feufeu", {
     opacity: 1,
   });
+
+/*gsap.to("#fuse6", {
+  motionPath: {
+    path: "#path-2",
+    align: "#path-2",
+    autoRotate: true,
+    alignOrigin: [0.5, 0.5],
+  },
+  duration: 4,
+}); */
 
 /*--- Animation Chapitre 7 ---*/
 
