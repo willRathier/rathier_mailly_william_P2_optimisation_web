@@ -28,10 +28,13 @@ window.addEventListener("scrollend", function () {
   }, 100);
 });
 
-/*-----INSTRUCTION 4-----*/
-/*-- Animation chapitre 1 --*/
+/*-- PLUGGINS --*/
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+
+/*-----INSTRUCTION 4-----*/
+/*-- Animation chapitre 1 --*/
 
 gsap
   .timeline({
@@ -284,6 +287,7 @@ gsap
     opacity: 0,
   });
 /*--- Animation chapitre 5 ---*/
+
 gsap
   .timeline({
     scrollTrigger: {
@@ -317,7 +321,9 @@ gsap
       duration: 20,
     },
     0
-  );
+  )
+  .from(".draw-me", { duration: 1, drawSVG: 0 });
+
 /*--- Animation Chapitre 6 ---*/
 gsap
   .timeline({
