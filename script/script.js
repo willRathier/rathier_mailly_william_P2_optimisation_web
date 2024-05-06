@@ -41,7 +41,7 @@ gsap
     scrollTrigger: {
       trigger: "#chapitre-1",
       pin: true,
-      scrub: 0.3,
+      scrub: 2,
       start: "top top",
       end: "bottom top",
     },
@@ -58,21 +58,46 @@ gsap
   .fromTo(
     "#chapitre-1",
     {
-      backgroundSize: "100%",
+      backgroundSize: "400%",
     },
     {
-      backgroundSize: "400%",
+      backgroundSize: "100%",
       ease: "none",
-      duration: 6,
+      duration: 3,
     },
     0.5
+  )
+  .from(
+    "#terre",
+    {
+      scale: 2,
+      duration: 3,
+    },
+    1
+  )
+  .from(
+    "#lune",
+    {
+      scale: 1.4,
+      duration: 3,
+    },
+    1
+  )
+  .from(
+    "#meteorite",
+    {
+      scale: 1.5,
+      duration: 3,
+    },
+    1
   )
   .to(
     "#lune",
     {
       x: "20vw",
+      duration: 3,
     },
-    0.3
+    4
   )
   .to(
     "#meteorite",
@@ -82,7 +107,7 @@ gsap
       y: "4.6vh",
       rotation: 90,
     },
-    0.3
+    4
   );
 gsap.from("#text-1", {
   xPercent: 300,
@@ -91,7 +116,7 @@ gsap.from("#text-1", {
     trigger: "#chapitre-1",
     start: "top bottom",
     end: "bottom top",
-    scrub: 1,
+    scrub: 2,
   },
 });
 /*-- Animation chapitre 2 --*/
@@ -153,7 +178,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-3",
-      scrub: 1,
+      scrub: 2,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -164,15 +189,11 @@ gsap
     opacity: 0,
     duration: 1.5,
   })
-  .from(
-    "#text-3",
-    {
-      duration: 3,
-      text: " ",
-      ease: "none",
-    },
-    0.5
-  )
+  .from("#text-3", {
+    duration: 3,
+    text: " ",
+    ease: "none",
+  })
   .to(
     "#pince",
     {
@@ -181,7 +202,7 @@ gsap
       repeat: 1,
       yoyo: true,
     },
-    0.5
+    2
   )
   .to(
     "#casque",
@@ -189,23 +210,23 @@ gsap
       y: "7vh",
       duration: 1,
     },
-    0.5
+    2
   )
   .to(
     "#kev2",
     {
-      x: "55vw",
+      x: "64.5vw",
       duration: 4,
     },
-    3
+    4
   )
   .to(
     "#casque",
     {
       x: "64.5vw",
-      duration: 5,
+      duration: 4,
     },
-    3
+    4
   );
 
 /*-- Animation chapitre 4 --*/
@@ -213,7 +234,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-4",
-      scrub: 1,
+      scrub: 2,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -221,15 +242,18 @@ gsap
   })
   .to("#kev3", {
     x: "15vw",
+    duration: 2,
   })
   .to("#kev3", {
     x: "29vw",
     y: "-25vh",
+    duration: 2,
   })
   .to(
     "#kev3",
     {
       opacity: 0,
+      duration: 1,
     },
     4
   )
@@ -238,11 +262,13 @@ gsap
     y: "-20vh",
     rotation: -45,
     opacity: 0.1,
+    duration: 2,
   })
   .from(
     ".feu",
     {
       y: "-12vh",
+      duration: 2,
     },
     6
   )
@@ -292,7 +318,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-5",
-      scrub: 1,
+      scrub: 2,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -343,7 +369,7 @@ gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-6",
-      scrub: 1,
+      scrub: 2,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -360,14 +386,18 @@ gsap
   )
   .to(".feufeu", {
     opacity: 0,
+    duration: 2,
   })
+
   .from("#kev6", {
     x: "-20vw",
     y: "-40vh",
     opacity: 0,
+    duration: 2,
   })
   .to("#kev6", {
     x: "13vw",
+    duration: 1,
   })
   .from(
     "#bombeMorph",
@@ -375,16 +405,38 @@ gsap
       x: "-22vw",
       y: "-40vh",
       opacity: 0,
+      duration: 2,
     },
-    4
-  );
+    6
+  )
+  .to(
+    "#kev6",
+    {
+      x: "-3vw",
+      duration: 2,
+    },
+    10
+  )
+  .to("#kev6", {
+    x: "-13vw",
+    y: "-23vh",
+    duration: 3,
+  })
+  .to("#kev6, #escalier6", {
+    opacity: 0,
+    duration: 1,
+  })
+  .to(".feufeu", {
+    opacity: 1,
+  });
+
 /*--- Animation Chapitre 7 ---*/
 
 gsap
   .timeline({
     scrollTrigger: {
       trigger: "#chapitre-7",
-      scrub: 1,
+      scrub: 2,
       start: "top top",
       end: "bottom top",
       pin: true,
@@ -394,7 +446,7 @@ gsap
     "#text-7",
     {
       duration: 3,
-      text: " ",
+      text: "",
       ease: "none",
     },
     0.5
