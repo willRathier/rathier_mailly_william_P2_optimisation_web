@@ -321,8 +321,22 @@ gsap
       duration: 20,
     },
     0
-  )
-  .from(".draw-me", { duration: 1, drawSVG: 0 });
+  );
+
+gsap
+  .timeline({
+    repeat: -1,
+    scrollTrigger: {
+      trigger: "#chapitre-5",
+    },
+  })
+  .to("#path-1", { duration: 1, drawSVG: 0 })
+  .to("#path-1", { duration: 2, drawSVG: 200 })
+  .to("#path-1", { duration: 1, drawSVG: 500 })
+  .to("#path-1", { duration: 2, drawSVG: 100 })
+  .to("#path-1", { duration: 1.5, drawSVG: 300 })
+  .to("#path-1", { duration: 1, drawSVG: 200 })
+  .to("#path-1", { duration: 2, drawSVG: 450 });
 
 /*--- Animation Chapitre 6 ---*/
 gsap

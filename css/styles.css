@@ -389,6 +389,16 @@ body.is-scrolling .feu {
 body.is-scrolling .volant {
   animation-play-state: running;
 }
+
+#cercle-1 {
+  width: 7.5vw;
+  height: 13.5vh;
+  position: absolute;
+  stroke-width: 0.3vw;
+  overflow: visible;
+  bottom: 23vh;
+  left: 25.5vw;
+}
 /*---- FIN chapitre 5 ----*/
 
 /*---- START chapitre 6 ----*/
