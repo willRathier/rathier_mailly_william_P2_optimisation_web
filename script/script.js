@@ -22,7 +22,7 @@ window.addEventListener("scroll", function () {
   document.body.classList.add("is-scrolling");
 });
 
-window.addEventListener("scrollend", function () {
+window.addEventListener("scroll", function () {
   scrollTimer = setTimeout(function () {
     document.body.classList.remove("is-scrolling");
   }, 100);
@@ -33,6 +33,7 @@ gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 /*-----INSTRUCTION 4-----*/
 /*-- Animation chapitre 1 --*/
@@ -406,7 +407,7 @@ gsap
       x: "-22vw",
       y: "-40vh",
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
     },
     6
   )
@@ -429,17 +430,34 @@ gsap
   })
   .to(".feufeu", {
     opacity: 1,
+  })
+  .to(".feufeu", {
+    opacity: 0,
+    duration: 2,
+  })
+  .to("#fuse6", {
+    motionPath: {
+      path: "#path-2",
+      align: "#path-2",
+      autoRotate: 90,
+      alignOrigin: [0.5, 0.5],
+    },
+    duration: 4,
+  })
+  .to("#morph-1", { duration: 2, morphSVG: "#morph-2" })
+  .to(
+    "#bombeMorph",
+    {
+      duration: 5,
+      y: "-30vh",
+      x: "-10vw",
+    },
+    22.8
+  )
+  .to("#bombeMorph", {
+    duration: 8,
+    scale: 30,
   });
-
-/*gsap.to("#fuse6", {
-  motionPath: {
-    path: "#path-2",
-    align: "#path-2",
-    autoRotate: true,
-    alignOrigin: [0.5, 0.5],
-  },
-  duration: 4,
-}); */
 
 /*--- Animation Chapitre 7 ---*/
 

@@ -293,6 +293,7 @@ ul.technique-gsap li {
   background-image: url(../img/spritesheet/spritesheet-feu.png);
   animation: feu 0.5s steps(19) infinite;
   aspect-ratio: 25/528;
+  animation-play-state: paused;
 }
 
 @keyframes feu {
@@ -374,7 +375,7 @@ body.is-scrolling .feu {
   left: 35vw;
   background-image: url(../img/spritesheet/spritesheet_volant.png);
   animation: steering 0.7s steps(20) infinite;
-  aspect-ratio: 2/21;
+  aspect-ratio: 1/1;
   animation-play-state: paused;
 }
 
@@ -443,13 +444,13 @@ body.is-scrolling .volant {
 
 .feufeu {
   position: absolute;
-  bottom: 5vh;
+  bottom: 8vh;
   left: 32.6vw;
   height: 15.2vh;
   width: 7.5vw;
   background-image: url(../img/spritesheet/spritesheet-feu.png);
   animation: feu 0.5s steps(19) infinite;
-  aspect-ratio: 25/528;
+  aspect-ratio: 1/1;
   animation-play-state: paused;
 }
 
@@ -475,7 +476,15 @@ body.is-scrolling .feufeu {
   width: 5.1vw;
 }
 
-#explosion {
+#explosionMorph {
+  height: 70vh;
+  width: 70vw;
+  position: absolute;
+  bottom: 10vh;
+  right: 15vw;
+}
+
+#morph-2 {
   visibility: hidden;
 }
 
@@ -484,7 +493,7 @@ body.is-scrolling .feufeu {
   bottom: 5vh;
   left: 60vw;
   height: 9.1vh;
-  width: 4vw;
+  width: 3.9vw;
 }
 
 #fuse6 {
@@ -501,6 +510,7 @@ body.is-scrolling .feufeu {
   height: 85vh;
   left: -4.8vw;
   top: -29vh;
+  visibility: hidden;
 }
 /*---- FIN chapitre 6 ----*/
 
