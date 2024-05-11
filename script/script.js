@@ -187,7 +187,6 @@ gsap
     },
   })
   .from("#chapitre-3", {
-    x: "-200vh",
     opacity: 0,
     duration: 1.5,
   })
