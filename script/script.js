@@ -442,9 +442,9 @@ gsap
       autoRotate: 90,
       alignOrigin: [0.5, 0.5],
     },
-    duration: 4,
+    duration: 18,
   })
-  .to("#morph-1", { duration: 2, morphSVG: "#morph-2" })
+  .to("#morph-1", { duration: 4, morphSVG: "#morph-2" })
   .to(
     "#bombeMorph",
     {
@@ -452,7 +452,7 @@ gsap
       y: "-30vh",
       x: "-10vw",
     },
-    22.8
+    24
   )
   .to("#bombeMorph", {
     duration: 8,

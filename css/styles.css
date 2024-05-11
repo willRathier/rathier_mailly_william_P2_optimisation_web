@@ -98,6 +98,7 @@ ul.technique-gsap li {
 #lune {
   width: 15vw;
   height: 30vh;
+  aspect-ratio: 1/1;
   position: absolute;
   left: 60vw;
   bottom: 35vh;
@@ -106,6 +107,7 @@ ul.technique-gsap li {
 #terre {
   height: 60vh;
   width: 25vw;
+  aspect-ratio: 1/1;
   position: absolute;
   left: 65vw;
   bottom: 20vh;
@@ -113,6 +115,7 @@ ul.technique-gsap li {
 
 #meteorite {
   position: absolute;
+  aspect-ratio: 1/1;
   height: 45vh;
   width: 25vw;
   top: 10vh;
@@ -144,6 +147,7 @@ ul.technique-gsap li {
 
 #kevin {
   position: absolute;
+  aspect-ratio: 1/1;
   height: 43.5vh;
   width: 11.4vw;
   left: 44vw;
@@ -152,6 +156,7 @@ ul.technique-gsap li {
 
 #sofa {
   position: absolute;
+  aspect-ratio: 1/1;
   width: 29.3vw;
   height: 38.7vh;
   bottom: 1vh;
