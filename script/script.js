@@ -1,11 +1,3 @@
-/*
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
-gsap.registerPlugin(TextPlugin);
-*/
-
 gsap.to(".arrow", { y: "10vh", duration: 1, repeat: -1, yoyo: true });
 
 let timer = setTimeout(100);
@@ -31,9 +23,9 @@ window.addEventListener("scroll", function () {
 /*-- PLUGGINS --*/
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
+/*gsap.registerPlugin(DrawSVGPlugin);*/
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+/*gsap.registerPlugin(MorphSVGPlugin);*/
 
 /*-----INSTRUCTION 4-----*/
 /*-- Animation chapitre 1 --*/
