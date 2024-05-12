@@ -83,7 +83,12 @@ ul.technique-gsap li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px red;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
 }
 
 #text-1 {
@@ -134,6 +139,11 @@ ul.technique-gsap li {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
 }
 
 #text-2 {
@@ -175,6 +185,11 @@ ul.technique-gsap li {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
 }
 
 #text-3 {
@@ -231,6 +246,11 @@ ul.technique-gsap li {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
 }
 
 #text-4 {
@@ -326,6 +346,11 @@ body.is-scrolling .feu {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
 }
 
 #text-5 {
@@ -419,6 +444,11 @@ body.is-scrolling .volant {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
 }
 
 #text-6 {
@@ -530,6 +560,11 @@ body.is-scrolling .feufeu {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
 }
 
 #text-7 {
