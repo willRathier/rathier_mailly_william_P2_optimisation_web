@@ -14,7 +14,7 @@ Je vais ajouter l'attribut meta du document.
 
 ### Résultat
 
-J'ai mis un attribut meta=description
+J'ai mis un attribut meta=description, donc le problème est résolu.
 
 ## Problème 2
 
