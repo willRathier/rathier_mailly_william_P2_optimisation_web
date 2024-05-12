@@ -44,8 +44,15 @@ header img {
 
 header h1 {
   margin: 0px;
-  margin-bottom: 20vh;
+  padding-top: 4vh;
+  margin-bottom: 13vh;
   font-size: 15vw;
+}
+
+header h2 {
+  margin: 0vh;
+  margin-bottom: 0vh;
+  font-size: 3vw;
 }
 
 ul.technique-gsap {

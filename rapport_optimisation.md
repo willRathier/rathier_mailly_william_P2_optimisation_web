@@ -28,6 +28,8 @@ Pour chanque image manquant l'attribut demandé je vais l'ajouter, en tout je va
 
 ### Résultat
 
+Résultat d'avoir mis la balise alt a tout mes images l'analyse ne montre plus de problèmes relié a mes images.
+
 ## Problème 3
 
 ### Nom du problème
