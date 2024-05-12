@@ -1,6 +1,6 @@
 # Rapport d'optimisation du projet scrollytelling
 
-[Page Speed Insights - Rapport du 12 mai 2024, 11:05:12](https://pagespeed.web.dev/analysis/https-williamr-tim-momo-com/iesew1jcgm?form_factor=desktop)
+[Page Speed Insights - Rapport du 12 mai 2024, 13:27:49](https://pagespeed.web.dev/analysis/https-williamr-tim-momo-com/eods4omyd0?form_factor=desktop)
 
 ## Problème 1
 
@@ -41,3 +41,5 @@ Titre d'en-tête mal gêrer
 Les titres dervont être modifiés pour que chaque titre ce suivent bien.
 
 ### Résultat
+
+Après avoir modifier mon h3 en h2 pour avoir une bonne continuation des titre l'analyse ne montre plus d'erreur.
