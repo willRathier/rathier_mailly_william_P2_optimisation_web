@@ -274,6 +274,7 @@ ul.technique-gsap li {
   width: 9vw;
   background-image: url(../img/spritesheet/spritesheet-feu-2.png);
   animation: feu 0.5s steps(7) infinite;
+  background-size: 100% 800%;
   aspect-ratio: 1/1;
   animation-play-state: paused;
 }
@@ -344,6 +345,7 @@ body.is-scrolling .feu {
   width: 30vw;
   background-image: url(../img/spritesheet/spritesheet2_volant.png);
   animation: steering 0.5s steps(2) infinite;
+  background-size: 100% 500%;
   aspect-ratio: 2/5;
   animation-play-state: paused;
 }
@@ -407,6 +409,7 @@ body.is-scrolling .volant {
   width: 9vw;
   background-image: url(../img/spritesheet/spritesheet-feu-2.png);
   animation: feu 0.5s steps(7) infinite;
+  background-size: 100% 800%;
   aspect-ratio: 125/1056;
   animation-play-state: paused;
 }
