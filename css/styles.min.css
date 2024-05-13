@@ -1,0 +1,567 @@
+:root {
+  --rouge: #d7132d;
+  --bleu: #061148;
+  --gris: #292728;
+  --blanc: #ffff;
+  --noir: #000;
+  --Madimi: "Madimi One", sans-serif;
+} /*---- styles généraux ----*/
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  font-family: var(--Madimi);
+  overflow-x: hidden;
+  background-color: var(--gris);
+  background-color: var(--blanc);
+}
+header {
+  background-image: url(../img/img_optimiser/background.jpg);
+  color: var(--blanc);
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+header p {
+  font-size: 30px;
+  margin: auto;
+  padding: 3vw;
+}
+header img {
+  width: 8vw;
+  height: 8vh;
+  margin: 0 auto;
+}
+header h1 {
+  margin: 0px;
+  padding-top: 4vh;
+  margin-bottom: 13vh;
+  font-size: 15vw;
+}
+header h2 {
+  margin: 0vh;
+  margin-bottom: 0vh;
+  font-size: 3vw;
+}
+ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: none;
+}
+ul.technique-gsap li {
+  margin: 5px 0;
+} /*img{border: 1px solid red;}*/ /*---- START chapitre 1 ----*/
+#chapitre-1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/elements_chap1/espace.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
+}
+#text-1 {
+  color: var(--blanc);
+  position: absolute;
+  width: 50vw;
+  font-size: 6vh;
+  left: 15vw;
+  text-align: center;
+  bottom: 5vh;
+  margin: 1vw;
+}
+#lune {
+  width: 15vw;
+  height: 30vh;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 60vw;
+  bottom: 35vh;
+}
+#terre {
+  height: 60vh;
+  width: 25vw;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 65vw;
+  bottom: 20vh;
+}
+#meteorite {
+  position: absolute;
+  aspect-ratio: 1/1;
+  height: 45vh;
+  width: 25vw;
+  top: 10vh;
+  left: 10vw;
+} /*---- FIN chapitre 1 ----*/ /*---- START chapitre 2 ----*/
+#chapitre-2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/elements_chap2/fond.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
+}
+#text-2 {
+  color: var(--blanc);
+  position: absolute;
+  font-size: 5vh;
+  height: 30vh;
+  width: 7vw;
+  top: 0;
+  left: 15vw;
+}
+#kevin {
+  position: absolute;
+  aspect-ratio: 1/1;
+  height: 43.5vh;
+  width: 11.4vw;
+  left: 44vw;
+  bottom: 15vh;
+}
+#sofa {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 29.3vw;
+  height: 38.7vh;
+  bottom: 1vh;
+  left: 35vw;
+} /*---- FIN chapitre 2 ----*/ /*---- START chapitre 3 ----*/
+#chapitre-3 {
+  background-image: url(../img/elements_chap3/fond_arriere.svg);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
+}
+#text-3 {
+  color: var(--blanc);
+  font-size: 4vh;
+  position: absolute;
+  top: 32vh;
+  left: 52vw;
+  height: 10vh;
+  width: 30vw;
+}
+#fond_avant {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  left: 0;
+  bottom: 0;
+}
+#kev2 {
+  position: absolute;
+  height: 39.5vh;
+  width: 9.5;
+  bottom: 5vh;
+  left: 39vw;
+}
+#pince {
+  position: absolute;
+  height: 42.5vh;
+  width: 12.4vw;
+  top: 10vh;
+  left: 37vw;
+}
+#casque {
+  position: absolute;
+  height: 14vh;
+  width: 8.75vw;
+  left: 38.8vw;
+  bottom: 40vh;
+} /*---- FIN chapitre 3 ----*/ /*---- START chapitre 4 ----*/
+#chapitre-4 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/elements_chap4/fond.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
+}
+#text-4 {
+  position: absolute;
+  color: var(--blanc);
+  font-size: 6vh;
+  width: 30vw;
+  top: 10vh;
+  left: 32vw;
+}
+#spaceship {
+  position: absolute;
+  height: 77.7vh;
+  width: 20.34;
+  bottom: 3vh;
+  right: 18vw;
+}
+#stairs {
+  position: absolute;
+  height: 30.4vh;
+  width: 17.4vw;
+  right: 33vw;
+  bottom: 5vh;
+} /*#feufeu{position: absolute; height: 13.6vh; width: 6.5vw; bottom: 2vh; right: 25vw;}*/
+#kev3 {
+  position: absolute;
+  height: 28.1vh;
+  width: 6.6;
+  bottom: 2vh;
+  left: 30vw;
+}
+#nuage1 {
+  position: absolute;
+  height: 30.9vh;
+  width: 65.2vw;
+  right: -5vw;
+  bottom: 0;
+}
+#numage2 {
+  position: absolute;
+  height: 17.2vh;
+  width: 28.5vw;
+  right: 12vw;
+  bottom: 2vh;
+}
+.feu {
+  position: absolute;
+  bottom: 0.5vh;
+  right: 23.5vw;
+  height: 15vh;
+  width: 9vw;
+  background-image: url(../img/spritesheet/spritesheet-feu-2.png);
+  animation: feu 0.5s steps(7) infinite;
+  aspect-ratio: 1/1;
+  animation-play-state: paused;
+}
+@keyframes feu {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+body.is-scrolling .feu {
+  animation-play-state: running;
+} /*---- FIN chapitre 4 ----*/ /*---- START chapitre 5 ----*/
+#chapitre-5 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/elements_chap5/fond.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
+}
+#text-5 {
+  position: absolute;
+  text-align: right;
+  color: var(--blanc);
+  font-size: 4vh;
+  width: 17vw;
+  right: 2vw;
+  height: 60vh;
+  top: 1vh;
+  margin: 2vw;
+  padding: 3vw;
+}
+#bombe {
+  position: absolute;
+  height: 38.1vh;
+  width: 13.2vw;
+  bottom: 0;
+  right: 15vw;
+}
+#kev4 {
+  position: absolute;
+  height: 72vh;
+  width: 33.4vw;
+  bottom: 0;
+  left: 34vw;
+}
+#meteorite2 {
+  position: absolute;
+  height: 13.3vh;
+  width: 8.3vw;
+  top: 14vh;
+  left: 33vw;
+}
+.volant {
+  position: absolute;
+  bottom: 15vh;
+  left: 35vw;
+  height: 34vh;
+  width: 30vw;
+  background-image: url(../img/spritesheet/spritesheet2_volant.png);
+  animation: steering 0.5s steps(2) infinite;
+  aspect-ratio: 2/5;
+  animation-play-state: paused;
+}
+@keyframes steering {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+body.is-scrolling .volant {
+  animation-play-state: running;
+}
+#cercle-1 {
+  width: 7.5vw;
+  height: 13.5vh;
+  position: absolute;
+  stroke-width: 0.3vw;
+  overflow: visible;
+  bottom: 23vh;
+  left: 25.5vw;
+} /*---- FIN chapitre 5 ----*/ /*---- START chapitre 6 ----*/
+#chapitre-6 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/elements_chap6/background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  background-attachment: fixed;
+}
+#text-6 {
+  color: var(--blanc);
+  position: absolute;
+  font-size: 7vh;
+  width: 30vw;
+  right: 10vw;
+  top: 5vh;
+  text-align: center;
+}
+#escalier6 {
+  position: absolute;
+  transform: scaleX(-1);
+  bottom: 7vh;
+  left: 38vw;
+  height: 30.4vh;
+  width: 17.4vw;
+}
+.feufeu {
+  position: absolute;
+  bottom: 8vh;
+  left: 32.65vw;
+  height: 15vh;
+  width: 9vw;
+  background-image: url(../img/spritesheet/spritesheet-feu-2.png);
+  animation: feu 0.5s steps(7) infinite;
+  aspect-ratio: 125/1056;
+  animation-play-state: paused;
+}
+@keyframes feu {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+body.is-scrolling .feufeu {
+  animation-play-state: running;
+}
+#kev6 {
+  position: absolute;
+  bottom: 4vh;
+  left: 55vw;
+  transform: scaleX(-1);
+  height: 21.7vh;
+  width: 5.1vw;
+}
+#explosionMorph {
+  height: 70vh;
+  width: 70vw;
+  position: absolute;
+  bottom: 10vh;
+  right: 15vw;
+}
+#morph-2 {
+  visibility: hidden;
+}
+#bombeMorph {
+  position: absolute;
+  bottom: 5vh;
+  left: 60vw;
+  height: 9.1vh;
+  width: 3.9vw;
+}
+#fuse6 {
+  position: absolute;
+  right: 55vw;
+  height: 60.8vh;
+  width: 15.9vw;
+  bottom: 10vh;
+}
+#svg-2 {
+  position: absolute;
+  width: 157.34vw;
+  height: 85vh;
+  left: -4.8vw;
+  top: -29vh;
+  visibility: hidden;
+} /*---- FIN chapitre 6 ----*/ /*---- START chapitre 7 ----*/
+#chapitre-7 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/elements_chap7/espace.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px red;
+}
+#text-7 {
+  color: var(--blanc);
+  position: absolute;
+  font-size: 7vh;
+  text-align: left;
+  width: 55vw;
+  bottom: 2vh;
+  left: 5vw;
+}
+.meteorite {
+  position: relative;
+  height: 60vh;
+  width: 35vw;
+  left: 25vw;
+  top: 15vh;
+}
+#meteorite3 {
+  position: absolute;
+  height: 36vh;
+  width: 21.5vw;
+  top: 1.1vh;
+  left: 0.5vw;
+}
+#meteorite4 {
+  position: absolute;
+  width: 18.4vw;
+  height: 42.5vh;
+  top: 4.9vh;
+  right: 1vw;
+}
+#meteorite5 {
+  position: absolute;
+  height: 31.5vh;
+  width: 22.3vw;
+  left: 4.3vw;
+  bottom: 5.3vh;
+} /*---- FIN chapitre 7 ----*/ /*------HTML SPRITESHEET------*/
+#explosion_test {
+  visibility: hidden;
+}
+#bombeMorph_test {
+  position: absolute;
+  bottom: 5vh;
+  left: 60vw;
+  height: 9.1vh;
+  width: 4vw;
+}
+.is-scrolling {
+  height: 1000px;
+}
+.sprite {
+  height: 18.95vh;
+  width: 13vw;
+  background-image: url(../img/spritesheet/spritesheet-feu-2.png);
+  animation: feu 0.5s steps(7) infinite;
+  aspect-ratio: 1/1;
+  border: 1px solid red;
+}
+@keyframes feu {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+body.is-scrolling .sprite {
+  animation-play-state: running;
+} /*.volant{height: 34vh; width: 42.3vw; background-image: url(../img/spritesheet/spritesheet2_volant.png); animation: steering 0.5s steps(2) infinite; aspect-ratio: 1/1; border: 1px solid red;}*/
+@keyframes steering {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+body.is-scrolling .volant {
+  animation-play-state: running;
+} /* --- CSS FOOTER --- */
+footer {
+  background-color: var(--gris);
+  color: var(--blanc);
+  font-size: 13px;
+  position: relative;
+  width: 100vw;
+  bottom: 0;
+  padding: 15px;
+  margin: 0;
+}
+footer p {
+  text-align: center;
+  padding: 0.3vw;
+}
