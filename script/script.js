@@ -23,9 +23,9 @@ window.addEventListener("scroll", function () {
 /*-- PLUGGINS --*/
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
-/*gsap.registerPlugin(DrawSVGPlugin);*/
+gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
-/*gsap.registerPlugin(MorphSVGPlugin);*/
+gsap.registerPlugin(MorphSVGPlugin);
 
 /*-----INSTRUCTION 4-----*/
 /*-- Animation chapitre 1 --*/
