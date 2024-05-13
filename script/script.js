@@ -260,8 +260,8 @@ gsap
   .from(
     ".feu",
     {
-      y: "-12vh",
-      duration: 2,
+      y: "-15vh",
+      duration: 1,
     },
     6
   )

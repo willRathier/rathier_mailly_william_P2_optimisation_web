@@ -321,11 +321,11 @@ ul.technique-gsap li {
 .feu {
   position: absolute;
   bottom: 0.5vh;
-  right: 25vw;
-  height: 15.2vh;
-  width: 7.5vw;
-  background-image: url(../img/spritesheet/spritesheet-feu.png);
-  animation: feu 0.5s steps(19) infinite;
+  right: 23.5vw;
+  height: 15vh;
+  width: 9vw;
+  background-image: url(../img/spritesheet/spritesheet-feu-2.png);
+  animation: feu 0.5s steps(7) infinite;
   aspect-ratio: 1/1;
   animation-play-state: paused;
 }
@@ -398,23 +398,15 @@ body.is-scrolling .feu {
   left: 33vw;
 }
 
-/*#volant {
-  position: absolute;
-  height: 22vh;
-  width: 24.8vw;
-  bottom: 15vh;
-  left: 37vw;
-}*/
-
 .volant {
   position: absolute;
-  height: 22vh;
-  width: 24.8vw;
   bottom: 15vh;
   left: 35vw;
-  background-image: url(../img/spritesheet/spritesheet_volant.png);
-  animation: steering 0.7s steps(20) infinite;
-  aspect-ratio: 1/1;
+  height: 34vh;
+  width: 30vw;
+  background-image: url(../img/spritesheet/spritesheet2_volant.png);
+  animation: steering 0.5s steps(2) infinite;
+  aspect-ratio: 2/5;
   animation-play-state: paused;
 }
 
@@ -478,23 +470,15 @@ body.is-scrolling .volant {
   width: 17.4vw;
 }
 
-/*#feu6 {
-  position: absolute;
-  bottom: 9vh;
-  right: 60.2vw;
-  height: 10.6vh;
-  width: 5.2vw;
-}*/
-
 .feufeu {
   position: absolute;
   bottom: 8vh;
-  left: 32.6vw;
-  height: 15.2vh;
-  width: 7.5vw;
-  background-image: url(../img/spritesheet/spritesheet-feu.png);
-  animation: feu 0.5s steps(19) infinite;
-  aspect-ratio: 1/1;
+  left: 32.65vw;
+  height: 15vh;
+  width: 9vw;
+  background-image: url(../img/spritesheet/spritesheet-feu-2.png);
+  animation: feu 0.5s steps(7) infinite;
+  aspect-ratio: 125/1056;
   animation-play-state: paused;
 }
 
@@ -629,12 +613,12 @@ body.is-scrolling .feufeu {
 }
 
 .sprite {
-  height: 132px;
-  width: 125px;
-  background-image: url(../img/spritesheet/spritesheet-feu.png);
-  animation: feu 0.5s steps(19) infinite;
-  aspect-ratio: 25/528;
-  animation-play-state: paused;
+  height: 18.95vh;
+  width: 13vw;
+  background-image: url(../img/spritesheet/spritesheet-feu-2.png);
+  animation: feu 0.5s steps(7) infinite;
+  aspect-ratio: 1/1;
+  border: 1px solid red;
 }
 
 @keyframes feu {
@@ -650,15 +634,15 @@ body.is-scrolling .sprite {
   animation-play-state: running;
 }
 
-.volant {
-  height: 238px;
-  width: 476px;
-  background-image: url(../img/spritesheet/spritesheet_volant.png);
-  animation: steering 0.7s steps(20) infinite;
-  aspect-ratio: 2/21;
-  animation-play-state: paused;
+/*.volant {
+  height: 34vh;
+  width: 42.3vw;
+  background-image: url(../img/spritesheet/spritesheet2_volant.png);
+  animation: steering 0.5s steps(2) infinite;
+  aspect-ratio: 1/1;
+  border: 1px solid red;
 }
-
+*/
 @keyframes steering {
   0% {
     background-position: 0 0;
