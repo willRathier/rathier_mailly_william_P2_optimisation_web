@@ -77,10 +77,6 @@ ul.technique-gsap li {
   margin: 5px 0;
 }
 
-/*img {
-  border: 1px solid red;
-}*/
-
 /*---- START chapitre 1 ----*/
 #chapitre-1 {
   position: relative;
@@ -90,7 +86,6 @@ ul.technique-gsap li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +141,6 @@ ul.technique-gsap li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +186,6 @@ ul.technique-gsap li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +246,6 @@ ul.technique-gsap li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -353,7 +345,6 @@ body.is-scrolling .feu {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,7 +434,6 @@ body.is-scrolling .volant {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -551,7 +541,6 @@ body.is-scrolling .feufeu {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px red;
 }
 
 #text-7 {
@@ -618,7 +607,6 @@ body.is-scrolling .feufeu {
   background-image: url(../img/spritesheet/spritesheet-feu-2.png);
   animation: feu 0.5s steps(7) infinite;
   aspect-ratio: 1/1;
-  border: 1px solid red;
 }
 
 @keyframes feu {
@@ -640,7 +628,6 @@ body.is-scrolling .sprite {
   background-image: url(../img/spritesheet/spritesheet2_volant.png);
   animation: steering 0.5s steps(2) infinite;
   aspect-ratio: 1/1;
-  border: 1px solid red;
 }
 */
 @keyframes steering {

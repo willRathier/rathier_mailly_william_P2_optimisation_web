@@ -43,3 +43,7 @@ Les titres dervont être modifiés pour que chaque titre ce suivent bien.
 ### Résultat
 
 Après avoir modifier mon h3 en h2 pour avoir une bonne continuation des titre l'analyse ne montre plus d'erreur.
+
+## Rapport projet ScrollyTelling après optimisation
+
+[Page Speed Insights - Rapport du 12 mai 2024, 20:17:47](https://pagespeed.web.dev/analysis/https-williamr-tim-momo-com/bcfqk0l2s6?form_factor=desktop)
